@@ -40,6 +40,9 @@ $ echo 'console.log(2+2)' | node
 
 $ echo '(prn (+ 2 2))' | clojure -
 4
+
+$ echo 'main() { printf("%d\n", 2+2); }' | tcc -run -
+4
 ```
 
 System requirements
