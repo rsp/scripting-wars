@@ -34,6 +34,9 @@ $ echo 'print 2+2' | ruby -l
 
 $ echo 'print 2+2' | python
 4
+
+$ echo 'console.log(2+2)' | node
+4
 ```
 
 System requirements
