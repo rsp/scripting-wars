@@ -37,6 +37,9 @@ $ echo 'print 2+2' | python
 
 $ echo 'console.log(2+2)' | node
 4
+
+$ echo '(prn (+ 2 2))' | clojure -
+4
 ```
 
 System requirements
