@@ -35,13 +35,16 @@ $ echo 'print 2+2' | ruby -l
 $ echo 'print 2+2' | python
 4
 
+$ echo 'echo $((2+2))' | sh
+4
+
+$ echo '(prn (+ 2 2))' | clojure -
+4
+
 $ echo 'puts [expr 2+2]' | tclsh
 4
 
 $ echo 'console.log(2+2)' | node
-4
-
-$ echo '(prn (+ 2 2))' | clojure -
 4
 
 $ echo 'main() { printf("%d\n", 2+2); }' | tcc -run -
