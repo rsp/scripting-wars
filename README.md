@@ -20,6 +20,19 @@ For my purposes a scripting language is any language that has a program
 that can run code supplied on standard input. It means that it's all about
 the tools available and has nothing to do with the language itself.
 
+Some examples:
+
+2+2 Test
+--------
+
+```
+$ echo 'print 2+2' | perl -l
+4
+
+$ echo 'print 2+2' | ruby -l
+4
+```
+
 System requirements
 -------------------
 
