@@ -31,6 +31,9 @@ $ echo 'print 2+2' | perl -l
 
 $ echo 'print 2+2' | ruby -l
 4
+
+$ echo 'print 2+2' | python
+4
 ```
 
 System requirements
