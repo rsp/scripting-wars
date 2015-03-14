@@ -54,12 +54,21 @@ $ echo 'main() { printf("%d\n", 2+2); }' | tcc -run -
 4
 ```
 
+Basically all of those are reasonably popular languages
+with easy to install binaries that can run programs
+piped through the standard input with no problems
+(like for example printing anything else than explicitly printed output)
+and no need to write any files on the file system.
+
+If any important language is missing here,
+please [sumbit an issue](https://github.com/rsp/scripting-wars/issues).
+
 System requirements
 -------------------
 
 It will be written and tested on Ubuntu 14.04
 but it should work on any standard Linux/Unix distribution. If it doesn't,
-please [sumbit an issue](https://github.com/rsp/git-experiments/issues).
+please [sumbit an issue](https://github.com/rsp/scripting-wars/issues).
 
 Commands
 --------
