@@ -35,6 +35,9 @@ $ echo 'print 2+2' | ruby -l
 $ echo 'print 2+2' | python
 4
 
+$ echo 'print(2+2)' | python3
+4
+
 $ echo 'print(2+2)' | lua
 4
 
