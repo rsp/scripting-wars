@@ -78,6 +78,33 @@ piped through the standard input with no problems
 (like for example printing anything else than explicitly printed output)
 and no need to write any files on the file system.
 
+An example of a failed test:
+
+```
+$ echo '(display (+ 2 2))' | guile
+GNU Guile 2.0.9
+Copyright (C) 1995-2013 Free Software Foundation, Inc.
+
+Guile comes with ABSOLUTELY NO WARRANTY; for details type `,show w'.
+This program is free software, and you are welcome to redistribute it
+under certain conditions; type `,show c' for details.
+
+Enter `,help' for help.
+4scheme@(guile-user)>
+```
+There is a number 4 burried in there somewhere, but it clearly is meant
+to be run interactively and I see no easy way to make it print only 4.
+
+I can use Guile to write just the number 4 using somethink like this:
+
+```
+$ t=`tempfile`; echo '(display (+ 2 2)) (newline)' > $t; guile --no-auto-compile $t; rm $t
+4
+```
+but it is not as straightforward as with other languages and I have to write
+a file to the file system so I don't consider it a suitable runtime
+for the purpose of this experimrnts.
+
 If any important language is missing here,
 please [sumbit an issue](https://github.com/rsp/scripting-wars/issues).
 
