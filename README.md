@@ -26,9 +26,19 @@ Some examples:
 --------
 
 Here is a 2+2 test: Can I add 2+2 using a given language
-without having to change any state of the system?
+and make it print only the number 4 without any unnecessary output,
+and can I do it without having to change any state of the system?
 By changing the state of the system I mean writing anything to disk
-or installing any language packages or modules that are not already installed by default.
+or installing any language packages that are not already installed by default.
+Ideally it should be possible to run the code provided on standard input,
+without any need to filter its output.
+
+Why is it important for a language to pass the 2+2 test?
+Because then it can be used in shell scripts for some tasks that are hard,
+impossible or not efficient to do using only
+[basic Unix tools](http://www.cs.toronto.edu/~maclean/csc209/unixtools.html).
+If a shell script can detect e.g. a Python runtime then it can use it
+for a specific task, with a fallback using the standard tools otherwise.
 
 ```
 $ echo 'print 2+2' | perl -l
