@@ -95,7 +95,7 @@ Enter `,help' for help.
 There is a number 4 burried in there somewhere, but it clearly is meant
 to be run interactively and I see no easy way to make it print only 4.
 
-I can use Guile to write just the number 4 using somethink like this:
+I can use Guile to write just the number 4 using something like this:
 
 ```
 $ t=`tempfile`; echo '(display (+ 2 2)) (newline)' > $t; guile --no-auto-compile $t; rm $t
