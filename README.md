@@ -25,6 +25,11 @@ Some examples:
 2+2 Test
 --------
 
+Here is a 2+2 test: Can I add 2+2 using a given language
+without having to change any state of the system?
+By changing the state of the system I mean writing anything to disk
+or installing any language packages or modules that are not already installed by default.
+
 ```
 $ echo 'print 2+2' | perl -l
 4
